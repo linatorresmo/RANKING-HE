@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>High End · Camino a la Gloria</title>
+<style>
+@font-face{font-family:"Bebas";src:url(data:font/woff2;base64,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) format("woff2");font-display:swap}
+:root{--bg:#000;--card:#0f0f0f;--card2:#161616;--line:#262626;--txt:#ededed;--mut:#8a8a8a;--acc:#E8704F;--acc2:#ff8f6e}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.45;-webkit-font-smoothing:antialiased}
+.d{font-family:"Bebas",Impact,"Arial Narrow",sans-serif;letter-spacing:.02em;font-weight:400;text-transform:uppercase}
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+/* hero */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;min-height:330px;gap:20px;padding-top:48px;padding-bottom:44px}
+.hero h1{font-size:clamp(54px,9vw,104px);line-height:.9;color:#e9e9e9}
+.hero h1 small{display:block;font-size:.5em;color:var(--mut);margin-bottom:10px;letter-spacing:.12em}
+.hero .upd{margin-top:22px;display:inline-flex;gap:10px;align-items:center;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:13px;color:var(--mut)}
+.hero .upd b{color:var(--txt);font-weight:600}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 4px rgba(232,112,79,.18)}
+.trophy{justify-self:center;width:min(260px,70%);opacity:.95}
+.lights{position:absolute;inset:0;background:radial-gradient(ellipse at 80% -10%,rgba(255,255,255,.14),transparent 55%),radial-gradient(ellipse at 10% 120%,rgba(232,112,79,.10),transparent 50%);pointer-events:none}
+.fixture{margin-top:22px;max-width:560px}
+.fxh{display:flex;align-items:baseline;gap:12px;margin-bottom:10px;flex-wrap:wrap}
+.fxh b{font-size:26px;color:#e9e9e9;font-weight:400}
+.fxh span{font-size:13px;color:var(--mut)}
+.fxr{display:flex;align-items:flex-start}
+.fx{display:flex;flex-direction:column;align-items:center;gap:5px;flex:none;width:44px;position:relative}
+.fxd{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:14px;font-weight:700;border:2px solid #333;color:var(--mut);background:#0a0a0a}
+.fx.ok .fxd{background:var(--acc);border-color:var(--acc);color:#000}
+.fx.next .fxd{border-color:var(--acc);color:var(--acc);box-shadow:0 0 0 5px rgba(232,112,79,.15)}
+.fx.fin .fxd{border-color:#777;font-size:16px}
+.fxm{font-size:12px;color:var(--txt);text-transform:uppercase;letter-spacing:.05em}
+.fx:not(.ok):not(.next) .fxm{color:var(--mut)}
+.fxt{position:absolute;top:62px;font-size:10px;white-space:nowrap;color:var(--acc);text-transform:uppercase;letter-spacing:.04em}
+.fx.fin .fxt{color:var(--mut)}
+.fxl{flex:1;height:2px;background:#333;margin-top:17px;min-width:8px}
+.fx.ok + .fxl{background:var(--acc)}
+.fixture{padding-bottom:18px}
+/* nav */
+nav.top{position:sticky;top:0;z-index:20;background:rgba(0,0,0,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
+nav.top a{flex:none;color:var(--mut);text-decoration:none;padding:8px 14px;border-radius:999px;font-size:14px;border:1px solid transparent}
+nav.top a:hover{color:var(--txt);border-color:var(--line)}
+section{scroll-margin-top:60px;padding:44px 0;border-bottom:1px solid var(--line)}
+h2{font-size:44px;line-height:1;margin-bottom:6px}
+.sub{color:var(--mut);font-size:15px;margin-bottom:22px}
+/* search */
+.search{position:relative;max-width:620px}
+.search input{width:100%;background:var(--card);border:1px solid #333;color:var(--txt);font-size:18px;padding:16px 18px 16px 50px;border-radius:14px;outline:none}
+.search input:focus{border-color:var(--acc)}
+.search svg{position:absolute;left:17px;top:18px;width:20px;height:20px;stroke:var(--mut)}
+.opts{position:absolute;left:0;right:0;top:calc(100% + 6px);background:var(--card2);border:1px solid #333;border-radius:14px;max-height:330px;overflow:auto;z-index:30;display:none}
+.opts.on{display:block}
+.opt{display:flex;justify-content:space-between;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line);cursor:pointer}
+.opt:last-child{border-bottom:0}
+.opt.hl,.opt:hover{background:#222}
+.opt>span:last-child{color:var(--mut);font-size:13px;white-space:nowrap}
+.opt .on{color:var(--txt)}
+.empty{padding:14px 16px;color:var(--mut)}
+/* ficha */
+#ficha{margin-top:26px;display:none;scroll-margin-top:70px}
+#ficha.on{display:block;animation:up .35s ease}
+@keyframes up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+.who .tag{display:inline-block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--acc);border:1px solid rgba(232,112,79,.4);padding:3px 10px;border-radius:999px;margin-bottom:10px}
+.who h3{font-size:40px;line-height:1}
+.who p{color:var(--mut);margin-top:6px}
+.big{display:flex;gap:18px;align-items:flex-end;flex-wrap:wrap}
+.pos{font-size:96px;line-height:.8;color:var(--acc)}
+.pos small{font-size:.35em;color:var(--mut)}
+.kpi{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.06em}
+.kv{font-size:34px;line-height:1}
+.months{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:4px}
+.m{background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:14px}
+.m .kv{font-size:30px}
+.m .pb{height:6px;background:#2a2a2a;border-radius:9px;margin-top:10px;overflow:hidden}
+.m .pb i{display:block;height:100%;background:#e9e9e9;border-radius:9px}
+.m.nc{opacity:.6;border-style:dashed}
+.m .p{font-size:12px;color:var(--mut);margin-top:6px}
+.streak{display:flex;gap:16px;align-items:center}
+.flame{width:64px;height:64px;flex:none}
+.trail{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);border-radius:10px;padding:6px 10px;font-size:13px;color:var(--mut)}
+.chip b{color:var(--txt)}
+.up{color:#7ddc8a}.down{color:#ff7b7b}
+.motiv{font-size:17px;margin-top:4px}
+/* league list */
+.league{margin-top:14px}
+.lrow{display:grid;grid-template-columns:54px 1fr 108px;align-items:center;gap:8px;padding:11px 14px;border-bottom:1px solid var(--line)}
+.lrow:last-child{border-bottom:0}
+.lrow .n{font-size:22px}
+.lrow .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lrow .mo{text-align:right;color:var(--mut);font-size:13px}
+.lrow.me{background:linear-gradient(90deg,rgba(232,112,79,.22),rgba(232,112,79,.04));border-left:3px solid var(--acc)}
+.lrow.me .nm{font-weight:700}
+.lrow.zone{border-bottom:1px dashed rgba(232,112,79,.45)}
+.lhead{display:grid;grid-template-columns:54px 1fr 108px;gap:8px;padding:8px 14px;font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid var(--line)}
+.lhead span:last-child{text-align:right}
+.badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;margin-left:8px;vertical-align:middle;border:1px solid #444;color:var(--mut)}
+.badge.w{background:var(--acc);border-color:var(--acc);color:#000;font-weight:700}
+.acc{grid-column:1/-1}
+.fgrid>*,.st,.m,.months>*{min-width:0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.st{background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:16px}
+.st .kv{font-size:46px}
+.st.hi{border-color:var(--acc)}.st.hi .kv{color:var(--acc)}
+.bigbar{height:12px;background:#2a2a2a;border-radius:9px;margin:16px 0 6px;overflow:hidden}
+.bigbar i{display:block;height:100%;background:linear-gradient(90deg,#e9e9e9,var(--acc));border-radius:9px}
+.cats{margin-top:16px;border-top:1px solid var(--line)}
+.cat{display:grid;grid-template-columns:1fr 120px 70px;gap:10px;align-items:center;padding:11px 0;border-bottom:1px solid var(--line);font-size:15px}
+.cat .b{height:6px;background:#2a2a2a;border-radius:9px;overflow:hidden;grid-column:1/-1;margin-top:-4px}
+.cat .b i{display:block;height:100%;background:#e9e9e9}
+.cat .r{text-align:right;color:var(--mut)}
+.cat .r b{color:var(--txt)}
+.cat .pp{text-align:right;font-weight:600}
+.mt{width:100%;border-collapse:collapse;font-size:15px}
+.mt th{font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.05em;font-weight:500;text-align:right;padding:8px 6px;border-bottom:1px solid var(--line)}
+.mt th:first-child,.mt td:first-child{text-align:left}
+.mt td{text-align:right;padding:12px 6px;border-bottom:1px solid var(--line)}
+.mt tr.nc td{color:var(--mut)}
+.mt tr.nc td s{color:var(--mut)}
+.mt tr.tot td{font-weight:700;border-bottom:0;border-top:2px solid #444}
+.mt tr.tot td:last-child{color:var(--acc)}
+.fire{font-size:13px;margin-left:6px;white-space:nowrap;color:var(--acc);font-weight:700}
+.mt th.hs{color:var(--acc)}
+.mt td.hs{color:var(--acc);background:rgba(232,112,79,.08)}
+.pos2{color:#e9e9e9}
+.big{justify-content:flex-start;gap:28px;flex-wrap:nowrap}
+.lead{margin-bottom:16px}
+.ldg{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.ld{text-align:left;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.ld.on{border-color:var(--acc);background:linear-gradient(180deg,rgba(232,112,79,.16),var(--card))}
+.ld[data-r]:hover{border-color:#555}
+.ldn{font-size:14px;font-weight:600;line-height:1.25}
+.tb{font-size:12px;margin-left:4px;white-space:nowrap;color:var(--mut)}
+.tb b{color:var(--txt);font-weight:600}
+.ldg3{grid-template-columns:repeat(2,1fr)}
+.ld.t3 ol{list-style:none;display:flex;flex-direction:column;gap:6px;margin-top:4px}
+.ld.t3 li{display:grid;grid-template-columns:30px 1fr;align-items:baseline;gap:4px}
+.ld.t3 li:first-child .lp{color:var(--acc)}
+.ld.t3 li:first-child .ln{font-weight:700}
+.lp{font-size:22px;line-height:1;color:var(--mut)}
+.ln{font-size:14px;line-height:1.3}
+.ld .ver{font-size:12px;color:var(--mut);margin-top:6px}
+.ld.on .ver{color:var(--acc)}
+.hp{color:var(--acc);font-weight:700;margin-left:2px}
+.sec{display:inline-block;font-size:11px;font-family:ui-monospace,Menlo,Consolas,monospace;color:var(--mut);border:1px solid #333;border-radius:6px;padding:0 5px;margin-left:6px;vertical-align:middle;letter-spacing:.02em}
+.lrow.hrow{opacity:.6}
+.ctx{display:inline-block;margin-top:14px;font-size:13px;color:var(--mut);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+.ctx b{color:var(--txt);font-weight:600}
+.legend{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px;margin-top:10px}
+.lg{display:flex;gap:10px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.lgi{font-size:18px;line-height:1.2;width:22px;text-align:center;flex:none}
+.lgi .hp{font-size:24px;line-height:1;margin:0}
+.lg b{display:block;font-size:13px;color:var(--txt)}
+.lg span{font-size:12px;color:var(--mut);line-height:1.35}
+/* rankings */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.tab{padding:10px 16px;border-radius:12px;border:1px solid #333;color:var(--mut);font-size:15px}
+.tab.on{background:#fff;color:#000;border-color:#fff;font-weight:600}
+.tab.sm{padding:7px 13px;font-size:13px;border-radius:999px}
+.tab.sm.on{background:var(--acc);border-color:var(--acc);color:#000}
+.rk{display:grid;grid-template-columns:1fr 300px;gap:14px;align-items:start}
+.prize{position:sticky;top:76px;background:#fff;color:#000;border-radius:18px;padding:22px;overflow:hidden}
+.prize .kpi{color:#555}
+.prize h4{font-size:46px;line-height:.95;margin:6px 0 10px}
+.prize .amt{font-size:58px;line-height:.9;color:#000}
+.prize .amt small{font-size:.4em}
+.prize p{font-size:14px;color:#333;margin-top:10px}
+.prize .sc{font-size:13px;margin-top:14px;padding-top:12px;border-top:1px solid #ddd;color:#555}
+.pod{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:10px;align-items:end;margin-bottom:14px}
+.pd{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;text-align:center}
+.pd .n{font-size:44px;line-height:1;color:var(--mut)}
+.pd.p1{border-color:var(--acc);background:linear-gradient(180deg,rgba(232,112,79,.18),var(--card))}
+.pd.p1 .n{color:var(--acc);font-size:60px}
+.pd .nm{font-size:14px;font-weight:600;margin-top:4px}
+.pd .rg{font-size:12px;color:var(--mut)}
+.mbar{display:flex;align-items:center;gap:10px;margin:14px 0 8px;flex-wrap:wrap}
+.mbar .kpi{margin-right:4px}
+.note{font-size:13px;color:var(--mut);margin-top:12px}
+.nc-tag{white-space:nowrap;font-size:11px;color:var(--acc);border:1px solid rgba(232,112,79,.5);border-radius:999px;padding:1px 7px}
+/* premios */
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.pc{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:6px;cursor:pointer;transition:.2s}
+.pc:hover{border-color:var(--acc);transform:translateY(-2px)}
+.pc h4{font-size:30px;line-height:1}
+.pc .amt{font-size:44px;color:var(--acc);line-height:1}
+.pc .sc{font-size:13px;color:var(--mut)}
+.pc .go{margin-top:auto;padding-top:10px;font-size:13px;color:var(--txt)}
+footer{padding:30px 0 50px;color:var(--mut);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:820px){
+ .hero .wrap{grid-template-columns:1fr;min-height:0;padding-top:34px;padding-bottom:30px}
+ .trophy{display:none}
+ .fgrid,.rk{grid-template-columns:1fr}
+ .prize{position:static;order:-1}
+ .pgrid{grid-template-columns:1fr 1fr}
+ .pos{font-size:80px}
+}
+@media(max-width:520px){.legend{grid-template-columns:1fr 1fr}.lg{padding:9px}.fx{width:38px}.fxd{width:30px;height:30px;font-size:12px}.fxh b{font-size:22px}.ldg{grid-template-columns:1fr 1fr}.ldg3{grid-template-columns:1fr}.pos{font-size:64px}.big{gap:18px}.mt{font-size:14px}.mt th{font-size:10px;padding:8px 3px}.mt td{padding:10px 3px}.card{padding:16px}.st .kpi{font-size:11px}.months{gap:6px}.m .kpi{font-size:11px}.stats{grid-template-columns:1fr 1fr 1fr;gap:6px}.st{padding:10px}.st .kv{font-size:28px}.cat{grid-template-columns:1fr 96px 56px;font-size:14px}.lrow,.lhead{grid-template-columns:40px 1fr 96px}.lrow .nm{white-space:normal}.pgrid{grid-template-columns:1fr}.months{grid-template-columns:1fr 1fr 1fr}.m{padding:10px}.m .kv{font-size:24px}h2{font-size:38px}.who h3{font-size:32px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="lights"></div>
+  <div class="wrap">
+    <div>
+      <h1 class="d"><small>Ranking</small>High End<br>Camino a la gloria</h1>
+      <div class="upd"><span class="dot"></span><span>Última actualización: <b id="updDate"></b></span></div>
+      <div class="fixture" id="fixture"></div>
+    </div>
+    <svg class="trophy" viewBox="0 0 200 240" aria-hidden="true">
+      <defs><linearGradient id="tg" x1="0" x2="1"><stop offset="0" stop-color="#6b6b6b"/><stop offset=".45" stop-color="#f2f2f2"/><stop offset=".6" stop-color="#bdbdbd"/><stop offset="1" stop-color="#4a4a4a"/></linearGradient></defs>
+      <path d="M52 20h96v34c0 40-20 70-48 78-28-8-48-38-48-78z" fill="url(#tg)"/>
+      <path d="M52 34H28c0 34 14 52 34 58M148 34h24c0 34-14 52-34 58" fill="none" stroke="url(#tg)" stroke-width="8" stroke-linecap="round"/>
+      <rect x="90" y="130" width="20" height="40" fill="url(#tg)"/>
+      <path d="M64 170h72l8 24H56z" fill="url(#tg)"/>
+      <rect x="48" y="194" width="104" height="22" rx="3" fill="#2a2a2a"/>
+      <rect x="70" y="200" width="60" height="10" rx="2" fill="#E8704F"/>
+    </svg>
+  </div>
+</header>
+
+<nav class="top"><div class="wrap">
+  <a href="#buscar">Buscar mi nombre</a>
+  <a href="#rankings">Rankings por cargo</a>
+  <a href="#puntos">Puntos en juego</a>
+  <a href="#premios">Premios</a>
+</div></nav>
+
+<section id="buscar"><div class="wrap">
+  <h2 class="d">¿Dónde voy?</h2>
+  <p class="sub">Escribe tu nombre y selecciónalo para ver tus puntajes y tu puesto.</p>
+  <div class="search">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="text" autocomplete="off" placeholder="Ej: Laura, Sebastián, Mayra…" aria-label="Buscar nombre">
+    <div class="opts" id="opts" role="listbox"></div>
+  </div>
+  <div id="ficha"></div>
+</div></section>
+
+<section id="rankings"><div class="wrap">
+  <h2 class="d">Rankings por cargo</h2>
+  <p class="sub">Elige un cargo. Por privacidad solo se muestran nombres y puestos (y el % de cumplimiento de volumen cuando hay empate).</p>
+  <div class="tabs" id="cargoTabs"></div>
+  <div class="tabs" id="regTabs"></div>
+  <div class="rk">
+    <div>
+      <div class="lead" id="leaders"></div>
+      <div class="pod" id="podium"></div>
+      <div class="mbar"><span class="kpi">Ver:</span><span id="monthTabs" class="tabs" style="margin:0"></span></div>
+      <div class="card" style="padding:0" id="rkList"></div>
+      <div id="rkNote"></div>
+    </div>
+    <aside class="prize" id="prizeCard"></aside>
+  </div>
+</div></section>
+
+<section id="puntos"><div class="wrap">
+  <h2 class="d">Puntos en juego</h2>
+  <p class="sub">Puntos disponibles que cada cargo podía hacer cada mes y el total acumulado a la fecha. Busca tu nombre arriba para ver cuántos hiciste tú.</p>
+  <div class="card" style="padding:6px 16px;overflow-x:auto" id="dispTable"></div>
+  <p class="note" id="dispNote"></p>
+</div></section>
+
+<section id="premios"><div class="wrap">
+  <h2 class="d">Premios</h2>
+  <p class="sub">Toca un premio para ver su ranking.</p>
+  <div class="pgrid" id="prizeGrid"></div>
+</div></section>
+
+<footer><div class="wrap">
+  <span>High End · Camino a la Gloria · El acumulado es % de puntos obtenidos sobre puntos disponibles.</span>
+  <span id="ver"></span>
+</div></footer>
+
+<script>
+/* ============ CONFIGURACIÓN (editar aquí) ============ */
+const VERSION = "v2.9 · 2026-11-09";
+const ULTIMA_ACTUALIZACION = "Cierre de septiembre 2026";
+const MESES = ["Julio", "Agosto", "Septiembre"];               // meses cerrados, en orden
+const MESES_RANKING = ["Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]; // todo el ranking (el último es la final)
+const MESES_CORTOS = { Julio: "Jul", Agosto: "Ago", Septiembre: "Sep", Octubre: "Oct", Noviembre: "Nov", Diciembre: "Dic" };
+const CATEGORIAS = ["Gente & RTM", "Portafolio Perfecto", "Ejecución"];
+// Meses que NO cuentan por regional (contingencia de agosto en Sur)
+const MESES_EXCLUIDOS = { "CO Sur": ["Agosto"] };
+const MOTIVO_EXCLUSION = "Regional Sur: agosto no cuenta por la contingencia presentada en el país en el mes de agosto";
+// Personas que no compiten (retiros, etc.). Se escriben como aparecen en DATA.
+const EXCLUIR_PERSONAS = ["Juan Manuel Torres"];
+// true = quien no tiene registro en el último mes cerrado ya no aparece (retiros / cambios de cargo)
+const SOLO_ACTIVOS_ULTIMO_MES = true;
+// Cargos donde el acumulado usa el denominador completo (mes sin registro = 0 puntos de los disponibles)
+const DENOMINADOR_COMPLETO = ["DN"];
+// Helpers (cubren el sector) se muestran con * pero no compiten por puesto ni premio
+const HELPERS_COMPITEN = false;
+const REGIONALES = ["CO Andes", "CO Centro", "CO Norte", "CO Sur"];
+const CARGOS = [
+  { id: "Lead HE", nombre: "Lead High End",            alcance: "pais",     ganadores: "1 ganador país",       premio: "Viaje Corona Island", monto: "10", extra: "+ 10 mio COP" },
+  { id: "KAM",     nombre: "KAM",                      alcance: "pais",     ganadores: "1 ganador país",       premio: "Viaje Corona Island", monto: "5",  extra: "+ 5 mio COP" },
+  { id: "SE",      nombre: "Supervisor Ejecución",     alcance: "pais",     ganadores: "1 ganador país",       premio: "Viaje Corona Island", monto: "5",  extra: "+ 5 mio COP" },
+  { id: "LN",      nombre: "Líder de Negociación",     alcance: "pais",     ganadores: "1 ganador país",       premio: "Viaje Corona Island", monto: "5",  extra: "+ 5 mio COP" },
+  { id: "DN",      nombre: "Desarrollador de Negocio", alcance: "regional", ganadores: "1 ganador por regional", premio: "Un año de cerveza Michelob Ultra", monto: "4", extra: "+ 4 mio COP" },
+  { id: "AGD",     nombre: "Agente Draft",             alcance: "regional", ganadores: "1 ganador por regional", premio: "Un año de cerveza Michelob Ultra", monto: "4", extra: "+ 4 mio COP" }
+];
+/* ============ DATOS ============
+   DISPONIBLES[cargo][mes][categoría] = puntos posibles
+   DATA: n = nombre, r = regional, c = cargo, m = { mes: { categoría: puntos } } (mes ausente = sin registro),
+   v = { mes: [volumen real, meta de volumen] } para el desempate */
+const DISPONIBLES = {"KAM": {"Julio": {"Gente & RTM": 100, "Portafolio Perfecto": 450, "Ejecución": 0}, "Agosto": {"Gente & RTM": 100, "Portafolio Perfecto": 450, "Ejecución": 150}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 450, "Ejecución": 150}}, "DN": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 350, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 350, "Ejecución": 150}, "Septiembre": {"Gente & RTM": 150, "Portafolio Perfecto": 350, "Ejecución": 150}}, "AGD": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 350, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 350, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 150, "Portafolio Perfecto": 350, "Ejecución": 0}}, "SE": {"Julio": {"Gente & RTM": 300, "Portafolio Perfecto": 325, "Ejecución": 0}, "Agosto": {"Gente & RTM": 300, "Portafolio Perfecto": 325, "Ejecución": 150}, "Septiembre": {"Gente & RTM": 300, "Portafolio Perfecto": 325, "Ejecución": 150}}, "LN": {"Julio": {"Gente & RTM": 100, "Portafolio Perfecto": 350, "Ejecución": 0}, "Agosto": {"Gente & RTM": 100, "Portafolio Perfecto": 350, "Ejecución": 200}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 250, "Ejecución": 200}}, "Lead HE": {"Julio": {"Gente & RTM": 250, "Portafolio Perfecto": 350, "Ejecución": 0}, "Agosto": {"Gente & RTM": 250, "Portafolio Perfecto": 350, "Ejecución": 200}, "Septiembre": {"Gente & RTM": 250, "Portafolio Perfecto": 350, "Ejecución": 200}}};
+const DATA = [
+  {"s": "DRAFT01", "h": false, "v": {"Julio": [29.586, 38.091], "Agosto": [21.195, 22.686], "Septiembre": [31.101, 23.0]}, "n": "Harol Alberto Torres Villa", "r": "CO Andes", "c": "AGD", "m": {"Julio": {"Gente & RTM": 100, "Portafolio Perfecto": 75, "Ejecución": 0}, "Agosto": {"Gente & RTM": 100, "Portafolio Perfecto": 175, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 175, "Ejecución": 0}}},
+  {"s": "DRAFT05", "h": false, "v": {"Julio": [73.773, 73.941], "Agosto": [41.445, 71.685], "Septiembre": [49.164, 60.0]}, "n": "Jamier Antonio Vallejo Benitez", "r": "CO Andes", "c": "AGD", "m": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 75, "Ejecución": 0}, "Agosto": {"Gente & RTM": 100, "Portafolio Perfecto": 75, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 75, "Ejecución": 0}}},
+  {"s": "DRAFT02", "h": false, "v": {"Julio": [23.811, 26.772], "Agosto": [21.732, 23.211], "Septiembre": [24.144, 23.0]}, "n": "Jhon Alberto Gonzalez Perez", "r": "CO Andes", "c": "AGD", "m": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 75, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 250, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 175, "Ejecución": 0}}},
+  {"s": "DRAFT06", "h": false, "v": {"Julio": [107.067, 104.94], "Agosto": [24.087, 107.067], "Septiembre": [70.437, 80.0]}, "n": "Juan Stevan Villegas Velasquez", "r": "CO Andes", "c": "AGD", "m": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 175, "Ejecución": 0}, "Agosto": {"Gente & RTM": 100, "Portafolio Perfecto": 75, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 75, "Ejecución": 0}}},
+  {"s": "DRAFT07", "h": false, "v": {"Julio": [39.0, 36.303], "Agosto": [23.481, 38.1], "Septiembre": [16.665, 38.0]}, "n": "Omar Andres Sarmiento Silva", "r": "CO Andes", "c": "AGD", "m": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 250, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 75, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 50, "Portafolio Perfecto": 75, "Ejecución": 0}}},
+  {"s": "DRAFT03", "h": false, "v": {"Julio": [19.623, 22.659], "Agosto": [82.998, 18.723], "Septiembre": [49.698, 60.0]}, "n": "Walter Andres Medina Obregon", "r": "CO Andes", "c": "AGD", "m": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 75, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 250, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 150, "Portafolio Perfecto": 250, "Ejecución": 0}}},
+  {"s": "COM6ZA", "h": false, "v": {"Julio": [297.0713, 324.3392], "Agosto": [235.0, 320.0], "Septiembre": [240.5484, 380.0]}, "n": "Brayyan Molina Aguirre", "r": "CO Andes", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 75, "Ejecución": 0}, "Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 200, "Ejecución": 50}, "Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 100, "Ejecución": 50}}},
+  {"s": "COM4T5", "h": false, "v": {"Julio": [589.9568, 565.7895], "Septiembre": [393.1453, 250.0]}, "n": "John Alejandro Ceballos Hurtado", "r": "CO Andes", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 100, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 0, "Ejecución": 100}}},
+  {"s": "COM6DJ", "h": false, "v": {"Julio": [407.0614, 433.1125], "Agosto": [371.0, 460.0], "Septiembre": [334.4509, 542.0]}, "n": "Jorge Leonardo Ramirez Morales", "r": "CO Andes", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 75, "Ejecución": 0}, "Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 100, "Ejecución": 50}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 100, "Ejecución": 0}}},
+  {"s": "COM6ZB", "h": false, "v": {"Julio": [234.2794, 235.819], "Agosto": [168.0, 250.0], "Septiembre": [187.2457, 318.0]}, "n": "Juan Camilo Demetrio Zorro Jailer", "r": "CO Andes", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 75, "Ejecución": 0}, "Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 100, "Ejecución": 100}, "Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 0, "Ejecución": 50}}},
+  {"s": "COM6ZC", "h": true, "v": {"Julio": [291.812, 316.7273], "Agosto": [256.0, 320.0], "Septiembre": [260.6835, 360.0]}, "n": "Juan Carlos Osorio Gomez", "r": "CO Andes", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 0, "Ejecución": 0}, "Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 175, "Ejecución": 50}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 0, "Ejecución": 50}}},
+  {"s": "COM215", "h": false, "v": {"Julio": [529.0276, 556.4238], "Agosto": [455.0, 520.0], "Septiembre": [463.5282, 620.0]}, "n": "Santiago Salazar Molano", "r": "CO Andes", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 175, "Ejecución": 0}, "Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 275, "Ejecución": 100}, "Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 100, "Ejecución": 0}}},
+  {"s": "Sebastian Bustamante", "h": false, "v": {"Julio": [339.8775, 450.0], "Agosto": [238.3269, 380.0], "Septiembre": [262.0, 385.0]}, "n": "Sebastian Bustamante", "r": "CO Andes", "c": "LN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 0, "Ejecución": 0}, "Agosto": {"Gente & RTM": 100, "Portafolio Perfecto": 0, "Ejecución": 100}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 100, "Ejecución": 100}}},
+  {"s": "Juan Sandoval", "h": false, "v": {"Julio": [2622.5979, 2770.0]}, "n": "Juan Sandoval", "r": "CO Andes", "c": "Lead HE", "m": {"Julio": {"Gente & RTM": 100, "Portafolio Perfecto": 0, "Ejecución": 0}}},
+  {"s": "Valentina Bustamante", "h": false, "v": {"Agosto": [1943.5147, 2790.0]}, "n": "Valentina Bustamante", "r": "CO Andes", "c": "Lead HE", "m": {"Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 150, "Ejecución": 150}}},
+  {"s": "William Alonso", "h": false, "v": {"Septiembre": [2121.0, 2850.0]}, "n": "William Alonso", "r": "CO Andes", "c": "Lead HE", "m": {"Septiembre": {"Gente & RTM": 250, "Portafolio Perfecto": 0, "Ejecución": 0}}},
+  {"s": "Sebastian Molina", "h": false, "v": {"Julio": [2622.5979, 2770.0], "Agosto": [1947.0, 2790.0], "Septiembre": [2121.0104, 2850.0]}, "n": "Sebastian Molina", "r": "CO Andes", "c": "SE", "m": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 175, "Ejecución": 0}, "Agosto": {"Gente & RTM": 50, "Portafolio Perfecto": 150, "Ejecución": 150}, "Septiembre": {"Gente & RTM": 250, "Portafolio Perfecto": 250, "Ejecución": 50}}},
+  {"s": "DRAFT20", "h": false, "v": {"Julio": [36.441, 34.659], "Agosto": [30.765, 45.981], "Septiembre": [35.229, 46.0]}, "n": "Andres Francisco Solano Vargas", "r": "CO Centro", "c": "AGD", "m": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 175, "Ejecución": 0}, "Agosto": {"Gente & RTM": 100, "Portafolio Perfecto": 75, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 75, "Ejecución": 0}}},
+  {"s": "DRAFT09", "h": false, "v": {"Julio": [42.705, 34.83], "Agosto": [35.562, 39.723], "Septiembre": [30.144, 40.0]}, "n": "Camilo Betancourt", "r": "CO Centro", "c": "AGD", "m": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 350, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 75, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 150, "Portafolio Perfecto": 75, "Ejecución": 0}}},
+  {"s": "DRAFT18", "h": false, "v": {"Julio": [51.225, 53.931], "Agosto": [30.378, 29.799], "Septiembre": [33.639, 32.0]}, "n": "Cristian Oflainer Quiñones Rodriguez", "r": "CO Centro", "c": "AGD", "m": {"Julio": {"Gente & RTM": 100, "Portafolio Perfecto": 0, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 175, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 175, "Ejecución": 0}}},
+  {"s": "DRAFT17", "h": false, "v": {"Julio": [62.55, 65.226], "Agosto": [59.484, 65.757], "Septiembre": [57.993, 66.0]}, "n": "Diego Ricardo Mondragon Nuñez", "r": "CO Centro", "c": "AGD", "m": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 75, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 75, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 150, "Ejecución": 0}}},
+  {"s": "DRAFT16", "h": false, "v": {"Julio": [43.299, 35.484], "Agosto": [33.138, 43.899], "Septiembre": [40.014, 44.0]}, "n": "Eduardo Portella Gomez", "r": "CO Centro", "c": "AGD", "m": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 275, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 75, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 75, "Ejecución": 0}}},
+  {"s": "DRAFT21", "h": false, "v": {"Julio": [25.695, 29.586], "Agosto": [19.437, 23.319], "Septiembre": [17.904, 23.0]}, "n": "Edward Alberto García Bolaños", "r": "CO Centro", "c": "AGD", "m": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 75, "Ejecución": 0}, "Agosto": {"Gente & RTM": 100, "Portafolio Perfecto": 75, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 75, "Ejecución": 0}}},
+  {"s": "DRAFT11", "h": false, "v": {"Julio": [586.0, 584.805], "Agosto": [585.852, 902.67], "Septiembre": [420.237, 903.0]}, "n": "Jaime Andres Escobar", "r": "CO Centro", "c": "AGD", "m": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 350, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 150, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 150, "Portafolio Perfecto": 75, "Ejecución": 0}}},
+  {"s": "DRAFT13", "h": false, "v": {"Julio": [48.69, 41.628], "Agosto": [49.566, 61.176], "Septiembre": [31.386, 61.0]}, "n": "Jairo Lopez Mujica", "r": "CO Centro", "c": "AGD", "m": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 175, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 150, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 75, "Ejecución": 0}}},
+  {"s": "DRAFT15", "h": false, "v": {"Julio": [97.875, 68.943], "Agosto": [74.532, 95.787], "Septiembre": [66.738, 96.0]}, "n": "Jefferson Alexander Sanabria Pesca", "r": "CO Centro", "c": "AGD", "m": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 275, "Ejecución": 0}, "Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 0, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 75, "Ejecución": 0}}},
+  {"s": "DRAFT14", "h": false, "v": {"Julio": [23.619, 30.777], "Agosto": [15.861, 22.722], "Septiembre": [32.226, 23.0]}, "n": "Jesús Leonardo López", "r": "CO Centro", "c": "AGD", "m": {"Julio": {"Gente & RTM": 100, "Portafolio Perfecto": 75, "Ejecución": 0}, "Agosto": {"Gente & RTM": 100, "Portafolio Perfecto": 75, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 175, "Ejecución": 0}}},
+  {"s": "DRAFT10", "h": false, "v": {"Julio": [52.953, 60.006], "Agosto": [3.279, 7.146], "Septiembre": [30.915, 5.0]}, "n": "Jhonatan Salazar", "r": "CO Centro", "c": "AGD", "m": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 100, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 75, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 150, "Portafolio Perfecto": 175, "Ejecución": 0}}},
+  {"s": "DRAFT12", "h": false, "v": {"Julio": [35.118, 39.507], "Agosto": [27.09, 23.817], "Septiembre": [21.453, 28.0]}, "n": "Juan Carlos Diaz", "r": "CO Centro", "c": "AGD", "m": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 250, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 350, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 150, "Portafolio Perfecto": 75, "Ejecución": 0}}},
+  {"s": "DRAFT19", "h": false, "v": {"Julio": [46.299, 70.563], "Agosto": [50.781, 63.963], "Septiembre": [62.403, 64.0]}, "n": "Luis Felipe Hernandez", "r": "CO Centro", "c": "AGD", "m": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 75, "Ejecución": 0}, "Agosto": {"Gente & RTM": 100, "Portafolio Perfecto": 75, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 75, "Ejecución": 0}}},
+  {"s": "DRAFT08", "h": false, "v": {"Julio": [6.858, 40.95], "Agosto": [10.704, 18.747], "Septiembre": [25.323, 15.0]}, "n": "Mauricio López Salamanca", "r": "CO Centro", "c": "AGD", "m": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 250, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 150, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 150, "Portafolio Perfecto": 175, "Ejecución": 0}}},
+  {"s": "COM6V4", "h": false, "v": {"Julio": [216.6878, 280.3994], "Agosto": [199.0, 222.0], "Septiembre": [218.2631, 334.0]}, "n": "Angie Nathalia Cely Lopez", "r": "CO Centro", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 75, "Ejecución": 0}, "Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 100, "Ejecución": 100}, "Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 100, "Ejecución": 0}}},
+  {"s": "COM6S5", "h": true, "v": {"Julio": [519.0742, 484.1296], "Septiembre": [384.2701, 665.0]}, "n": "David Steven Moreno Barrios", "r": "CO Centro", "c": "DN", "m": {"Julio": {"Gente & RTM": 100, "Portafolio Perfecto": 250, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 100, "Ejecución": 50}}},
+  {"s": "COM137", "h": false, "v": {"Julio": [298.9486, 440.4529], "Agosto": [302.0, 298.0], "Septiembre": [386.9947, 385.0]}, "n": "Edinson Arley Fiole Puyo", "r": "CO Centro", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 175, "Ejecución": 0}, "Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 200, "Ejecución": 100}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 200, "Ejecución": 0}}},
+  {"s": "COM136", "h": false, "v": {"Julio": [297.1835, 305.3706], "Agosto": [312.0, 301.0], "Septiembre": [335.8993, 365.0]}, "n": "Haney Orlando Arevalo Romero", "r": "CO Centro", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 175, "Ejecución": 0}, "Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 275, "Ejecución": 100}, "Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 0, "Ejecución": 50}}},
+  {"s": "COM1ZA", "h": false, "v": {"Julio": [212.2004, 259.1217], "Agosto": [229.0, 215.0], "Septiembre": [212.599, 312.0]}, "n": "Juan David Garcia Gonzalez", "r": "CO Centro", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 175, "Ejecución": 0}, "Agosto": {"Gente & RTM": 50, "Portafolio Perfecto": 100, "Ejecución": 100}, "Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 75, "Ejecución": 0}}},
+  {"s": "COM6S5", "h": true, "v": {"Agosto": [385.0, 525.0]}, "n": "Juan Manuel Corredor", "r": "CO Centro", "c": "DN", "m": {"Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 175, "Ejecución": 100}}},
+  {"s": "COM2AO", "h": false, "v": {"Julio": [695.0826, 528.7566], "Agosto": [588.0, 707.0], "Septiembre": [565.8557, 218.0]}, "n": "Julian Estyben Peñaloza Cordoba", "r": "CO Centro", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 100, "Ejecución": 0}, "Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 175, "Ejecución": 50}, "Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 175, "Ejecución": 0}}},
+  {"s": "COM1ZF", "h": true, "v": {"Julio": [252.7798, 326.9719], "Agosto": [249.0, 258.0], "Septiembre": [340.0556, 275.0]}, "n": "Niver Alexander Legro Bohada", "r": "CO Centro", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 175, "Ejecución": 0}, "Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 175, "Ejecución": 100}, "Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 75, "Ejecución": 0}}},
+  {"s": "COM1ZJ", "h": false, "v": {"Julio": [174.7649, 207.7409], "Agosto": [173.0, 179.0], "Septiembre": [197.7869, 347.0]}, "n": "Yesid Ricardo Prada", "r": "CO Centro", "c": "DN", "m": {"Julio": {"Gente & RTM": 50, "Portafolio Perfecto": 250, "Ejecución": 0}, "Agosto": {"Gente & RTM": 50, "Portafolio Perfecto": 100, "Ejecución": 100}, "Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 100, "Ejecución": 100}}},
+  {"s": "Sebastian Jimenez", "h": false, "v": {"Julio": [410.6808, 410.0], "Agosto": [346.6381, 412.0], "Septiembre": [410.0, 412.0]}, "n": "Sebastian Jimenez", "r": "CO Centro", "c": "LN", "m": {"Julio": {"Gente & RTM": 100, "Portafolio Perfecto": 350, "Ejecución": 0}, "Agosto": {"Gente & RTM": 100, "Portafolio Perfecto": 100, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 0, "Ejecución": 0}}},
+  {"s": "Mayra Campos", "h": false, "v": {"Julio": [3725.5231, 4150.0], "Agosto": [3203.2564, 3785.0], "Septiembre": [3670.0281, 4280.0]}, "n": "Mayra Campos", "r": "CO Centro", "c": "Lead HE", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 200, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 0, "Ejecución": 150}, "Septiembre": {"Gente & RTM": 50, "Portafolio Perfecto": 0, "Ejecución": 0}}},
+  {"s": "Jhonatan Cetina", "h": false, "v": {"Julio": [2362.067, 2516.6872], "Agosto": [1981.0, 2404.0], "Septiembre": [2255.3332, 2394.0]}, "n": "Jhonatan Cetina", "r": "CO Centro", "c": "SE", "m": {"Julio": {"Gente & RTM": 100, "Portafolio Perfecto": 325, "Ejecución": 0}, "Agosto": {"Gente & RTM": 50, "Portafolio Perfecto": 100, "Ejecución": 150}, "Septiembre": {"Gente & RTM": 50, "Portafolio Perfecto": 200, "Ejecución": 0}}},
+  {"s": "Miguel Castañeda", "h": false, "v": {"Julio": [1363.4561, 1633.3128], "Agosto": [1227.0, 1381.0], "Septiembre": [1414.6948, 1886.0]}, "n": "Miguel Castañeda", "r": "CO Centro", "c": "SE", "m": {"Julio": {"Gente & RTM": 100, "Portafolio Perfecto": 175, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 100, "Ejecución": 150}, "Septiembre": {"Gente & RTM": 150, "Portafolio Perfecto": 100, "Ejecución": 50}}},
+  {"s": "DRAFT24", "h": false, "v": {"Julio": [99.339, 76.137], "Agosto": [76.716, 98.445], "Septiembre": [59.994, 98.0]}, "n": "Ernesto Espriella Avila", "r": "CO Norte", "c": "AGD", "m": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 350, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 150, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 75, "Ejecución": 0}}},
+  {"s": "DRAFT25", "h": false, "v": {"Julio": [46.143, 50.931], "Agosto": [34.257, 44.343], "Septiembre": [47.064, 44.0]}, "n": "Jefferson Andres Hernandez Ferrer", "r": "CO Norte", "c": "AGD", "m": {"Julio": {"Gente & RTM": 100, "Portafolio Perfecto": 75, "Ejecución": 0}, "Agosto": {"Gente & RTM": 50, "Portafolio Perfecto": 75, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 175, "Ejecución": 0}}},
+  {"s": "DRAFT23", "h": false, "v": {"Julio": [204.591, 144.573], "Agosto": [207.642, 204.591], "Septiembre": [168.186, 210.0]}, "n": "Jorge Luis Fuentes Jaraba", "r": "CO Norte", "c": "AGD", "m": {"Julio": {"Gente & RTM": 150, "Portafolio Perfecto": 175, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 175, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 150, "Portafolio Perfecto": 75, "Ejecución": 0}}},
+  {"s": "DRAFT27", "h": false, "v": {"Julio": [157.533, 130.716], "Agosto": [99.735, 139.113], "Septiembre": [132.258, 139.0]}, "n": "Moises David Meza Peluffo", "r": "CO Norte", "c": "AGD", "m": {"Julio": {"Gente & RTM": 100, "Portafolio Perfecto": 175, "Ejecución": 0}, "Agosto": {"Gente & RTM": 100, "Portafolio Perfecto": 150, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 75, "Ejecución": 0}}},
+  {"s": "COM5ZD", "h": false, "v": {"Julio": [434.9979, 387.2835], "Septiembre": [406.9177, 440.0]}, "n": "Badid Alberto Bohorquez Lambertinez", "r": "CO Norte", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 275, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 100, "Ejecución": 0}}},
+  {"s": "COM5AG", "h": false, "v": {"Julio": [257.4113, 227.6367], "Agosto": [253.0, 270.0], "Septiembre": [286.1731, 250.0]}, "n": "Carlos Alberto Vergara Ruiz", "r": "CO Norte", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 350, "Ejecución": 0}, "Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 275, "Ejecución": 100}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 275, "Ejecución": 100}}},
+  {"s": "COM2ZA", "h": false, "v": {"Julio": [650.1789, 754.2978], "Agosto": [1083.0, 600.0], "Septiembre": [686.9124, 600.0]}, "n": "Giancarlos Berrio Portacio", "r": "CO Norte", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 0, "Ejecución": 0}, "Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 175, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 175, "Ejecución": 0}}},
+  {"s": "COM5ZA", "h": false, "v": {"Julio": [262.8605, 255.351], "Agosto": [201.0, 295.0], "Septiembre": [272.1771, 260.0]}, "n": "Jhonattan Alberto Ramirez Rolong", "r": "CO Norte", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 200, "Ejecución": 0}, "Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 100, "Ejecución": 100}, "Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 175, "Ejecución": 0}}},
+  {"s": "COM6V6", "h": false, "v": {"Julio": [200.0075, 227.9482], "Agosto": [125.0, 280.0], "Septiembre": [176.3748, 210.0]}, "n": "Maria Del Carmen La Rosa Amaris", "r": "CO Norte", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 250, "Ejecución": 0}, "Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 100, "Ejecución": 50}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 75, "Ejecución": 50}}},
+  {"s": "COM5ZB", "h": false, "v": {"Julio": [385.1644, 249.8674], "Agosto": [353.0, 360.0], "Septiembre": [320.2901, 320.0]}, "n": "Reinaldo Esteban Primo Prada", "r": "CO Norte", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 275, "Ejecución": 0}, "Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 350, "Ejecución": 100}, "Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 0, "Ejecución": 50}}},
+  {"s": "COM5T3", "h": false, "v": {"Julio": [567.6393, 501.7299], "Agosto": [582.0, 540.0], "Septiembre": [543.2655, 520.0]}, "n": "Silvia Patricia Oviedo Pabon", "r": "CO Norte", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 175, "Ejecución": 0}, "Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 100, "Ejecución": 100}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 100, "Ejecución": 100}}},
+  {"s": "COM6U5", "h": false, "v": {"Julio": [759.519, 695.8855]}, "n": "Valeria Alexandra Manjarres Cantillo", "r": "CO Norte", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 0, "Ejecución": 0}}},
+  {"s": "Reinaldo Primo", "h": false, "v": {"Septiembre": [331.0, 534.0]}, "n": "Reinaldo Primo", "r": "CO Norte", "c": "LN", "m": {"Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 100, "Ejecución": 0}}},
+  {"s": "William Alonso", "h": false, "v": {"Julio": [435.8133, 410.0], "Agosto": [355.8701, 550.0]}, "n": "William Alonso", "r": "CO Norte", "c": "LN", "m": {"Julio": {"Gente & RTM": 100, "Portafolio Perfecto": 150, "Ejecución": 0}, "Agosto": {"Gente & RTM": 100, "Portafolio Perfecto": 0, "Ejecución": 100}}},
+  {"s": "Valeria Garces", "h": false, "v": {"Julio": [3517.7787, 3300.0], "Agosto": [3810.0731, 3513.0], "Septiembre": [3267.6769, 3300.0]}, "n": "Valeria Garces", "r": "CO Norte", "c": "Lead HE", "m": {"Julio": {"Gente & RTM": 100, "Portafolio Perfecto": 200, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 200, "Ejecución": 150}, "Septiembre": {"Gente & RTM": 200, "Portafolio Perfecto": 100, "Ejecución": 0}}},
+  {"s": "Dairy Rodriguez", "h": false, "v": {"Julio": [3517.7787, 3300.0], "Agosto": [3814.0, 3513.0], "Septiembre": [3267.6769, 3300.0]}, "n": "Dairy Rodriguez", "r": "CO Norte", "c": "SE", "m": {"Julio": {"Gente & RTM": 200, "Portafolio Perfecto": 175, "Ejecución": 0}, "Agosto": {"Gente & RTM": 50, "Portafolio Perfecto": 150, "Ejecución": 150}, "Septiembre": {"Gente & RTM": 200, "Portafolio Perfecto": 150, "Ejecución": 50}}},
+  {"s": "DRAFT29", "h": false, "v": {"Julio": [6.882, 6.585], "Agosto": [2.9, 2.982], "Septiembre": [6.27, 6.0]}, "n": "Juan Carlos Mosquera Mosquera", "r": "CO Sur", "c": "AGD", "m": {"Julio": {"Gente & RTM": 100, "Portafolio Perfecto": 100, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 250, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 275, "Ejecución": 0}}},
+  {"s": "DRAFT28", "h": false, "v": {"Julio": [16.422, 11.955], "Agosto": [7.174, 7.173], "Septiembre": [15.207, 15.0]}, "n": "Yeffersson Andres Tamara Alvarez", "r": "CO Sur", "c": "AGD", "m": {"Julio": {"Gente & RTM": 100, "Portafolio Perfecto": 275, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 350, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 350, "Ejecución": 0}}},
+  {"s": "COM4ZA", "h": true, "v": {"Julio": [391.1744, 329.3168], "Septiembre": [318.9144, 381.0]}, "n": "Diana Carolina Quinayas Cometa", "r": "CO Sur", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 175, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 275, "Ejecución": 50}}},
+  {"s": "COM4ZA", "h": false, "v": {"Agosto": [363.0, 464.4]}, "n": "Elida Yiset Pino Olivar", "r": "CO Sur", "c": "DN", "m": {"Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 175, "Ejecución": 0}}},
+  {"s": "COM4ZB", "h": false, "v": {"Julio": [197.3227, 222.5992], "Agosto": [116.0, 208.9], "Septiembre": [243.3946, 171.0]}, "n": "Felix Angelo Gonzalez Machado", "r": "CO Sur", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 250, "Ejecución": 0}, "Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 175, "Ejecución": 50}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 100, "Ejecución": 0}}},
+  {"s": "COM4Z3", "h": false, "v": {"Julio": [219.482, 223.5332]}, "n": "Nancy Moreno Fernandez", "r": "CO Sur", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 275, "Ejecución": 0}}},
+  {"s": "COM1AU", "h": false, "v": {"Julio": [338.709, 304.5509], "Agosto": [197.0, 315.9], "Septiembre": [459.2099, 259.0]}, "n": "Sebastian Alejandro Giraldo Mena", "r": "CO Sur", "c": "DN", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 350, "Ejecución": 0}, "Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 175, "Ejecución": 100}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 175, "Ejecución": 50}}},
+  {"s": "COM4Z3", "h": false, "v": {"Agosto": [110.0, 230.7]}, "n": "Vladimir Vivas Benitez", "r": "CO Sur", "c": "DN", "m": {"Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 175, "Ejecución": 0}}},
+  {"s": "Alberto Borja", "h": false, "v": {"Julio": [300.5128, 230.0], "Agosto": [212.2771, 230.0], "Septiembre": [292.0, 170.0]}, "n": "Alberto Borja", "r": "CO Sur", "c": "LN", "m": {"Julio": {"Gente & RTM": 100, "Portafolio Perfecto": 350, "Ejecución": 0}, "Agosto": {"Gente & RTM": 100, "Portafolio Perfecto": 200, "Ejecución": 0}, "Septiembre": {"Gente & RTM": 100, "Portafolio Perfecto": 250, "Ejecución": 0}}},
+  {"s": "Santiago Novoa", "h": false, "v": {"Julio": [1146.6882, 1080.0], "Agosto": [783.574, 1219.9], "Septiembre": [1185.7927, 1000.0]}, "n": "Santiago Novoa", "r": "CO Sur", "c": "Lead HE", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 300, "Ejecución": 0}, "Agosto": {"Gente & RTM": 150, "Portafolio Perfecto": 50, "Ejecución": 150}, "Septiembre": {"Gente & RTM": 250, "Portafolio Perfecto": 300, "Ejecución": 0}}},
+  {"s": "Sebastian Serrano", "h": false, "v": {"Julio": [1146.6882, 1080.0], "Agosto": [786.0, 1220.0], "Septiembre": [1185.7927, 1000.0]}, "n": "Sebastian Serrano", "r": "CO Sur", "c": "SE", "m": {"Julio": {"Gente & RTM": 200, "Portafolio Perfecto": 325, "Ejecución": 0}, "Agosto": {"Gente & RTM": 200, "Portafolio Perfecto": 175, "Ejecución": 100}, "Septiembre": {"Gente & RTM": 250, "Portafolio Perfecto": 325, "Ejecución": 0}}},
+  {"s": "Juan Manuel Torres", "h": false, "v": {"Julio": [1082.7124, 987.0]}, "n": "Juan Manuel Torres", "r": "KAM (Nacional)", "c": "KAM", "m": {"Julio": {"Gente & RTM": 100, "Portafolio Perfecto": 275, "Ejecución": 0}}},
+  {"s": "Laura Vanessa", "h": false, "v": {"Julio": [932.4082, 841.0], "Agosto": [866.0556, 1133.6281], "Septiembre": [730.9747, 904.5445]}, "n": "Laura Vanessa", "r": "KAM (Nacional)", "c": "KAM", "m": {"Julio": {"Gente & RTM": 100, "Portafolio Perfecto": 200, "Ejecución": 0}, "Agosto": {"Gente & RTM": 100, "Portafolio Perfecto": 0, "Ejecución": 100}, "Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 100, "Ejecución": 100}}},
+  {"s": "Liliana Alvarado", "h": false, "v": {"Septiembre": [570.7761, 662.6161]}, "n": "Liliana Alvarado", "r": "KAM (Nacional)", "c": "KAM", "m": {"Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 0, "Ejecución": 100}}},
+  {"s": "Natalia Lopez", "h": false, "v": {"Julio": [356.3433, 370.0], "Agosto": [969.3643, 1352.1], "Septiembre": [813.6426, 924.191]}, "n": "Natalia Lopez", "r": "KAM (Nacional)", "c": "KAM", "m": {"Julio": {"Gente & RTM": 0, "Portafolio Perfecto": 0, "Ejecución": 0}, "Agosto": {"Gente & RTM": 0, "Portafolio Perfecto": 100, "Ejecución": 100}, "Septiembre": {"Gente & RTM": 0, "Portafolio Perfecto": 275, "Ejecución": 100}}}
+];
+
+/* ============ LÓGICA ============ */
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const cargoInfo = id => CARGOS.find(c => c.id === id);
+const regCorta = r => r.replace("CO ", "");
+const pct = x => x == null ? "—" : (x * 100).toFixed(1).replace(".", ",") + "%";
+const fmt = n => n.toLocaleString("es-CO");
+const sum = o => Object.values(o).reduce((a, b) => a + b, 0);
+const excluido = (p, mes) => (MESES_EXCLUIDOS[p.r] || []).includes(mes);
+const cuenta = (p, mes) => !!p.m[mes] && !excluido(p, mes);
+const disp = (p, mes) => sum(DISPONIBLES[p.c][mes]);
+const obt = (p, mes) => p.m[mes] ? sum(p.m[mes]) : 0;
+// meses que entran al denominador del acumulado
+const mesesDen = (p, hasta = MESES.length - 1) => MESES.slice(0, hasta + 1).filter(m => DENOMINADOR_COMPLETO.includes(p.c) ? !excluido(p, m) : cuenta(p, m));
+
+const PEOPLE = DATA.map((p, i) => ({ ...p, id: i, compite: !(p.h && !HELPERS_COMPITEN) }))
+  .filter(p => !EXCLUIR_PERSONAS.includes(p.n) && (!SOLO_ACTIVOS_ULTIMO_MES || p.m[MESES[MESES.length - 1]]));
+
+function acumulado(p, hasta) {               // hasta = índice de mes inclusive
+  let o = 0, d = 0, n = 0;
+  mesesDen(p, hasta).forEach(m => { o += obt(p, m); d += disp(p, m); n++; });
+  return d ? { o, d, v: o / d, n } : { o, d, v: null, n };
+}
+function mensual(p, mes) { return cuenta(p, mes) ? obt(p, mes) / disp(p, mes) : null; }
+
+function grupo(p) {                          // con quién compite
+  const c = cargoInfo(p.c);
+  return PEOPLE.filter(x => x.c === p.c && x.compite && (c.alcance === "pais" || x.r === p.r));
+}
+// Desempate: si dos personas tienen el mismo %, gana quien tenga mejor % de cumplimiento de volumen
+function volMes(p, mes) { const v = p.v && p.v[mes]; return v && v[1] > 0 ? v[0] / v[1] : null; }
+function volAcum(p, hasta) {
+  let r = 0, m = 0;
+  MESES.slice(0, hasta + 1).forEach(ms => { if (cuenta(p, ms) && p.v && p.v[ms]) { r += p.v[ms][0]; m += p.v[ms][1]; } });
+  return m > 0 ? r / m : null;
+}
+const iguales = (a, b) => Math.abs(a - b) < 1e-9;
+function rankear(lista, valor, desempate) {   // puesto tipo competencia; empate exacto se rompe por volumen
+  const vals = lista.map(x => ({ x, v: valor(x), d: desempate ? desempate(x) : null })).filter(o => o.v != null);
+  vals.sort((a, b) => iguales(a.v, b.v) ? (b.d ?? -1) - (a.d ?? -1) : b.v - a.v);
+  const pos = new Map(), des = new Set();
+  vals.forEach((o, i) => {
+    const prev = vals[i - 1];
+    const empate = i && iguales(o.v, prev.v);
+    if (empate) { des.add(o.x.id); des.add(prev.x.id); }
+    pos.set(o.x.id, empate && (o.d ?? -1) === (prev.d ?? -1) ? pos.get(prev.x.id) : i + 1);
+  });
+  return { pos, orden: vals.map(o => o.x), total: vals.length, des };
+}
+const pctV = x => x == null ? "—" : (x * 100).toFixed(0) + "%";
+// etiqueta de desempate: ⚖️ + % de cumplimiento de volumen que define el puesto
+const tbTag = (k, x, vol) => k.des.has(x.id) ? ` <span class="tb" title="Empató en puntos: se desempata por % de cumplimiento de volumen">⚖️ <b>vol. ${pctV(vol)}</b></span>` : "";
+const rkAcum = (g, i) => rankear(g, x => acumulado(x, i).v, x => volAcum(x, i));
+const rkMes = (g, m) => rankear(g, x => mensual(x, m), x => cuenta(x, m) ? volMes(x, m) : null);
+const last = MESES.length - 1;
+
+function racha(p) {                          // meses seguidos subiendo o sosteniendo el 1.º en el acumulado
+  const g = grupo(p);
+  const tray = MESES.map((m, i) => rkAcum(g, i).pos.get(p.id) ?? null);
+  let r = 0;
+  for (let i = tray.length - 1; i > 0; i--) {
+    if (tray[i] != null && tray[i - 1] != null && (tray[i] < tray[i - 1] || tray[i] === 1)) r++; else break;
+  }
+  if (tray[tray.length - 1] === 1 && r === 0) r = 1;
+  return { r, tray };
+}
+const fire = p => { const r = racha(p).r; return r ? ` <span class="fire" title="${r} ${r === 1 ? "mes" : "meses"} en racha">🔥${r}</span>` : ""; };
+
+// nombre con marca de helper (*) y sector (solo DN)
+const MOSTRAR_SECTOR = ["DN"];
+const nom = x => esc(x.n) + (x.h ? '<span class="hp" title="Helper: está cubriendo este sector">*</span>' : "") + (MOSTRAR_SECTOR.includes(x.c) && x.s ? ` <span class="sec">${esc(x.s)}</span>` : "");
+const NOTA_HELPER = "* Helper: está cubriendo el sector; sus puntos se muestran como referencia y no entran en el ranking del premio.";
+
+/* ---------- Buscador ---------- */
+const q = $("#q"), opts = $("#opts");
+let hl = -1, current = [];
+function renderOpts() {
+  const t = norm(q.value.trim());
+  current = t ? PEOPLE.filter(p => norm(p.n).includes(t)).slice(0, 30) : [];
+  if (!t) { opts.classList.remove("on"); return; }
+  opts.innerHTML = current.length
+    ? current.map((p, i) => `<div class="opt${i === hl ? " hl" : ""}" role="option" data-i="${i}"><span class="on">${nom(p)}</span><span>${esc(cargoInfo(p.c).nombre)} · ${esc(regCorta(p.r))}</span></div>`).join("")
+    : `<div class="empty">No encontramos ese nombre. Prueba solo con tu primer nombre o apellido.</div>`;
+  opts.classList.add("on");
+}
+q.addEventListener("input", () => { hl = -1; renderOpts(); });
+q.addEventListener("keydown", e => {
+  if (!current.length) return;
+  if (e.key === "ArrowDown") { hl = Math.min(hl + 1, current.length - 1); renderOpts(); e.preventDefault(); }
+  if (e.key === "ArrowUp") { hl = Math.max(hl - 1, 0); renderOpts(); e.preventDefault(); }
+  if (e.key === "Enter") { pick(current[Math.max(hl, 0)]); e.preventDefault(); }
+  if (e.key === "Escape") opts.classList.remove("on");
+});
+opts.addEventListener("mousedown", e => { const o = e.target.closest(".opt"); if (o) pick(current[+o.dataset.i]); });
+document.addEventListener("click", e => { if (!e.target.closest(".search")) opts.classList.remove("on"); });
+
+function pick(p) {
+  q.value = p.n; opts.classList.remove("on");
+  renderFicha(p);
+}
+
+/* ---------- Ficha personal ---------- */
+function flameSVG(on) {
+  return `<svg class="flame" viewBox="0 0 64 64"><path d="M32 4c4 12 18 18 18 34a18 18 0 0 1-36 0c0-9 5-14 9-18 0 7 3 10 6 11-2-11 1-20 3-27z" fill="${on ? "#E8704F" : "#333"}"/><path d="M32 30c3 6 9 9 9 17a9 9 0 0 1-18 0c0-5 4-8 5-10 1 4 2 5 4 6-1-5 0-9 0-13z" fill="${on ? "#ffd2c2" : "#555"}"/></svg>`;
+}
+function renderFicha(p) {
+  const c = cargoInfo(p.c), g = grupo(p);
+  const ac = acumulado(p, last);
+  const rk = rkAcum(g, last);
+  const miPos = rk.pos.get(p.id);
+  const ambito = c.alcance === "pais" ? "a nivel país" : "en " + regCorta(p.r);
+  const mesRk = rkMes(g, MESES[last]);
+  const mesPos = mesRk.pos.get(p.id), mesV = mensual(p, MESES[last]);
+
+  // trayectoria del puesto acumulado mes a mes
+  const { r: rachaN, tray } = racha(p);
+
+  let motiv;
+  if (!p.compite) motiv = p.h ? "Estás cubriendo este sector como helper. Aquí ves tus puntos del mes y acumulados." : "No participa en el ranking.";
+  else if (miPos == null) motiv = "Aún no tienes meses válidos en el acumulado.";
+  else if (miPos === 1) motiv = "¡Vas de primero! Sostén el ritmo hasta el cierre.";
+  else if (miPos <= 3) motiv = `Estás en el podio. Te falta${miPos - 1 > 1 ? "n" : ""} ${miPos - 1} puesto${miPos - 1 > 1 ? "s" : ""} para el 1.º`;
+  else motiv = `Estás a ${miPos - 3} puesto${miPos - 3 > 1 ? "s" : ""} del podio. ¡Cada punto cuenta!`;
+
+  const mov = (tray[last] != null && tray[last - 1] != null) ? tray[last - 1] - tray[last] : null;
+  const movTxt = mov == null ? "" : mov > 0 ? `<span class="up">▲ subiste ${mov} vs ${MESES_CORTOS[MESES[last - 1]]}</span>` : mov < 0 ? `<span class="down">▼ bajaste ${-mov} vs ${MESES_CORTOS[MESES[last - 1]]}</span>` : `<span>= mismo puesto que ${MESES_CORTOS[MESES[last - 1]]}</span>`;
+
+  const months = MESES.map(m => {
+    const tiene = !!p.m[m], ok = cuenta(p, m);
+    if (!tiene) return `<div class="m nc"><div class="kpi">${m}</div><div class="kv">—</div><div class="p">Sin registro</div></div>`;
+    const o = obt(p, m), d = disp(p, m), v = o / d;
+    const mp = ok ? rkMes(g, m).pos.get(p.id) : null;
+    return `<div class="m${ok ? "" : " nc"}"><div class="kpi">${m}</div><div class="kv d">${o}<small style="font-size:.5em;color:var(--mut)"> / ${d}</small></div>
+      <div class="pb"><i style="width:${Math.min(v * 100, 100)}%"></i></div>
+      <div class="p">${ok ? pct(v) + (mp && p.compite ? ` · puesto ${mp} del mes` : "") : `<span class="nc-tag">Mes no cuenta</span>`}</div></div>`;
+  }).join("");
+
+  // liga: lista con nombres y puestos, resaltando a la persona
+  const orden = rk.orden;
+  const sinVal = g.filter(x => !rk.pos.has(x.id));
+  const league = orden.map(x => {
+    const pos = rk.pos.get(x.id), me = x.id === p.id;
+    const mp = mesRk.pos.get(x.id);
+    return `<div class="lrow${me ? " me" : ""}${pos === 3 && orden.length > 3 ? " zone" : ""}"><span class="n d">${pos}</span><span class="nm">${nom(x)}${fire(x)}${pos === 1 ? '<span class="badge w">Líder</span>' : ""}${tbTag(rk, x, volAcum(x, last))}${me ? '<span class="badge">Tú</span>' : ""}</span><span class="mo">${mp ? MESES_CORTOS[MESES[last]] + ": " + mp + "º" : "—"}</span></div>`;
+  }).join("");
+
+  const nota = MESES_EXCLUIDOS[p.r] ? `<p class="note">${MOTIVO_EXCLUSION}.</p>` : "";
+  $("#ficha").innerHTML = `
+  <div class="fgrid">
+    <div class="card who"><span class="tag">${esc(c.nombre)} · ${esc(regCorta(p.r))}</span><h3 class="d">${esc(p.n)}${p.h ? '<span class="hp">*</span>' : ""}</h3>
+      <p>${MOSTRAR_SECTOR.includes(p.c) && p.s ? `Sector <b style="color:var(--txt)">${esc(p.s)}</b> · ` : ""}${p.h ? `Cubriendo sector ${ambito}` : `Compites ${ambito} · ${esc(c.ganadores)}`}</p>${p.h ? `<p class="note">${NOTA_HELPER}</p>` : ""}</div>
+    <div class="card"><div class="big"><div><div class="kpi">Puesto acumulado</div><div class="pos d">${miPos ?? "—"}<small> / ${rk.total}</small></div></div>
+      <div><div class="kpi">Puesto en ${MESES[last].toLowerCase()}</div><div class="pos d pos2">${mesPos ?? "—"}<small> / ${mesRk.total}</small></div></div></div>
+      <div class="kpi" style="margin-top:12px;text-transform:none;letter-spacing:0">Acumulado: <b style="color:var(--txt)">${pct(ac.v)}</b> (${fmt(ac.o)} de ${fmt(ac.d)} pts) · ${MESES[last]}: <b style="color:var(--txt)">${mesV != null ? pct(mesV) : "—"}</b></div>
+      <div class="motiv" style="margin-top:12px">${motiv}</div></div>
+    <div class="card acc"><div class="tabs" id="fTabs" style="margin-bottom:16px"></div><div id="fDetail"></div></div>
+    <div class="card acc"><div class="kpi" style="margin-bottom:6px">Mes a mes · puntos que podías hacer y los que hiciste</div>${tablaMeses(p)}</div>
+    <div class="card"><div class="streak">${flameSVG(rachaN > 0)}<div><div class="kv d">${rachaN} ${rachaN === 1 ? "mes" : "meses"} en racha</div>
+      <div class="kpi" style="text-transform:none;letter-spacing:0">${rachaN ? "Subiendo o sosteniendo el 1.º en el acumulado" : "Sube un puesto el próximo mes para encender tu racha"}</div></div></div>
+      <div class="trail">${tray.map((t, i) => `<span class="chip">${MESES_CORTOS[MESES[i]]}: <b>${t ?? "—"}º</b></span>`).join("")}</div>
+      <div style="margin-top:10px;font-size:14px">${movTxt}</div></div>
+    <div class="card" style="padding:0"><div class="lhead"><span>#</span><span>Tu liga · ${esc(c.nombre)}${c.alcance === "regional" ? " " + esc(regCorta(p.r)) : ""}</span><span>${MESES_CORTOS[MESES[last]]}</span></div><div class="league">${league}</div></div>
+  </div>`;
+  fichaP = p; fichaView = "Acumulado"; renderDetail();
+  $("#ficha").classList.add("on");
+  $("#ficha").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+
+
+function tablaMeses(p) {
+  let to = 0, td = 0, hayExcl = false;
+  const den = mesesDen(p);
+  const rows = MESES.filter(m => p.m[m] || den.includes(m)).map(m => {
+    const o = obt(p, m), d = disp(p, m), ok = den.includes(m);
+    if (ok) { to += o; td += d; } else hayExcl = true;
+    if (ok && !p.m[m]) return `<tr><td>${m} <span class="nc-tag">Sin registro · cuenta 0</span></td><td>${fmt(d)}</td><td>0</td><td>${pct(0)}</td></tr>`;
+    return ok
+      ? `<tr><td>${m}</td><td>${fmt(d)}</td><td>${fmt(o)}</td><td>${pct(o / d)}</td></tr>`
+      : `<tr class="nc"><td>${m} <span class="nc-tag">No cuenta</span></td><td><s>${fmt(d)}</s></td><td><s>${fmt(o)}</s></td><td>—</td></tr>`;
+  }).join("");
+  return `<table class="mt"><thead><tr><th>Mes</th><th>Disponibles</th><th>Hiciste</th><th>%</th></tr></thead><tbody>${rows}
+    <tr class="tot"><td>Acumulado</td><td>${fmt(td)}</td><td>${fmt(to)}</td><td>${td ? pct(to / td) : "—"}</td></tr></tbody></table>
+    ${hayExcl ? `<p class="note">${MOTIVO_EXCLUSION}: esos puntos (disponibles y logrados) no suman en tu acumulado.</p>` : ""}
+    ${DENOMINADOR_COMPLETO.includes(p.c) ? `<p class="note">En ${esc(cargoInfo(p.c).nombre)} el acumulado suma los puntos disponibles de todos los meses cerrados; un mes sin registro cuenta como 0.</p>` : ""}`;
+}
+/* ---------- Detalle con pestañas (meses + acumulado) ---------- */
+let fichaP = null, fichaView = "Acumulado";
+function renderDetail() {
+  const p = fichaP, g = grupo(p);
+  $("#fTabs").innerHTML = MESES.filter(m => p.m[m]).concat("Acumulado").map(v => `<button class="tab sm${v === fichaView ? " on" : ""}" data-fv="${v}">${v === "Acumulado" ? "Acumulado" : MESES_CORTOS[v]}</button>`).join("");
+  let meses, titulo, pos = null, total = null, aviso = "";
+  if (fichaView === "Acumulado") {
+    meses = mesesDen(p);
+    titulo = "Acumulado a la fecha · cuenta " + (meses.length ? meses.map(m => MESES_CORTOS[m]).join(" + ") : "ningún mes válido");
+    const rk = rkAcum(g, last); pos = rk.pos.get(p.id); total = rk.total;
+  } else {
+    const m = fichaView;
+    titulo = m;
+    if (!p.m[m]) { $("#fDetail").innerHTML = `<div class="kpi">${m}</div><div class="empty" style="padding:18px 0">Sin registro este mes.</div>`; return; }
+    meses = [m];
+    if (cuenta(p, m)) { const rk = rkMes(g, m); pos = rk.pos.get(p.id); total = rk.total; }
+    else aviso = `<p class="note"><span class="nc-tag">Mes no cuenta</span> ${MOTIVO_EXCLUSION}. Estos puntos no suman en tu acumulado.</p>`;
+  }
+  const o = meses.reduce((a, m) => a + obt(p, m), 0);
+  const d = meses.reduce((a, m) => a + disp(p, m), 0);
+  const v = d ? o / d : null;
+  const cats = CATEGORIAS.map(k => {
+    const co = meses.reduce((a, m) => a + ((p.m[m] || {})[k] || 0), 0);
+    const cd = meses.reduce((a, m) => a + (DISPONIBLES[p.c][m][k] || 0), 0);
+    if (!cd) return "";
+    return `<div class="cat"><span>${k}</span><span class="r"><b>${fmt(co)}</b> / ${fmt(cd)} pts</span><span class="pp">${pct(co / cd)}</span><div class="b"><i style="width:${Math.min(co / cd * 100, 100)}%"></i></div></div>`;
+  }).join("");
+  const dim = aviso ? ' style="opacity:.55"' : "";
+  $("#fDetail").innerHTML = `<div class="kpi" style="margin-bottom:12px">${titulo}${pos && p.compite ? ` · puesto <b style="color:var(--acc)">${pos}</b> de ${total}` : ""}</div>
+    <div${dim}><div class="stats"><div class="st"><div class="kpi">Puntos logrados</div><div class="kv d">${fmt(o)}</div></div>
+    <div class="st"><div class="kpi">Puntos disponibles</div><div class="kv d">${fmt(d)}</div></div>
+    <div class="st hi"><div class="kpi">% ${fichaView === "Acumulado" ? "Acumulado" : "del mes"}</div><div class="kv d">${pct(v)}</div></div></div>
+    <div class="bigbar"><i style="width:${v ? Math.min(v * 100, 100) : 0}%"></i></div>
+    <div class="kpi" style="text-transform:none;letter-spacing:0">Lograste ${fmt(o)} de ${fmt(d)} puntos posibles · Cumplimiento de volumen: <b style="color:var(--txt)">${pctV(fichaView === "Acumulado" ? volAcum(p, last) : volMes(p, fichaView))}</b> (sirve para desempatar)</div>
+    <div class="kpi" style="margin-top:18px">Por categoría</div><div class="cats">${cats || '<div class="empty">Sin datos</div>'}</div></div>${aviso}
+    ${fichaView === "Acumulado" && MESES_EXCLUIDOS[p.r] ? `<p class="note">${MOTIVO_EXCLUSION}.</p>` : ""}`;
+}
+document.addEventListener("click", e => { const b = e.target.closest("[data-fv]"); if (b) { fichaView = b.dataset.fv; renderDetail(); } });
+
+/* ---------- Rankings por cargo ---------- */
+let selCargo = CARGOS[0].id, selReg = REGIONALES[0], selMes = "Acumulado";
+function renderTabs() {
+  $("#cargoTabs").innerHTML = CARGOS.map(c => `<button class="tab${c.id === selCargo ? " on" : ""}" data-c="${c.id}">${esc(c.nombre)}</button>`).join("");
+  const c = cargoInfo(selCargo);
+  $("#regTabs").innerHTML = c.alcance === "regional" ? REGIONALES.map(r => `<button class="tab sm${r === selReg ? " on" : ""}" data-r="${r}">${regCorta(r)}</button>`).join("") : "";
+  $("#regTabs").style.display = c.alcance === "regional" ? "flex" : "none";
+  $("#monthTabs").innerHTML = MESES.concat("Acumulado").map(m => `<button class="tab sm${m === selMes ? " on" : ""}" data-m="${m}">${m === "Acumulado" ? "Acumulado" : MESES_CORTOS[m]}</button>`).join("");
+}
+function renderRanking() {
+  renderTabs();
+  const c = cargoInfo(selCargo);
+  const g = PEOPLE.filter(x => x.c === selCargo && x.compite && (c.alcance === "pais" || x.r === selReg));
+  const acum = selMes === "Acumulado";
+  const rk = acum ? rkAcum(g, last) : rkMes(g, selMes);
+  const pod = [1, 0, 2].map(i => rk.orden[i]).map((x, k) => x ? `<div class="pd${k === 1 ? " p1" : ""}"><div class="n d">${rk.pos.get(x.id)}º</div><div class="nm">${nom(x)}</div><div class="rg">${esc(regCorta(x.r))}</div></div>` : "<div></div>").join("");
+  $("#podium").innerHTML = rk.orden.length ? pod : "";
+  // quién va punteando en cada regional (vista seleccionada)
+  const regional = c.alcance === "regional";
+  const vista = acum ? "acumulado" : selMes.toLowerCase();
+  const ld = REGIONALES.map(r => {
+    const gr = PEOPLE.filter(x => x.c === selCargo && x.r === r && x.compite);
+    if (!gr.length) return "";
+    const k = acum ? rkAcum(gr, last) : rkMes(gr, selMes);
+    const on = regional && r === selReg;
+    const excl = !acum && (MESES_EXCLUIDOS[r] || []).includes(selMes);
+    const vacio = excl ? '<span class="nc-tag">Mes no cuenta</span>' : "—";
+    const tb = x => tbTag(k, x, acum ? volAcum(x, last) : volMes(x, selMes));
+    if (!regional) {
+      const top = k.orden[0];
+      return `<div class="ld"><span class="kpi">${regCorta(r)}</span><span class="ldn">${top ? nom(top) + fire(top) + tb(top) : vacio}</span></div>`;
+    }
+    const top3 = k.orden.slice(0, 3).map(x => `<li><span class="lp d">${k.pos.get(x.id)}º</span><span class="ln">${nom(x)}${fire(x)}${tb(x)}</span></li>`).join("");
+    return `<button class="ld t3${on ? " on" : ""}" data-r="${r}"><span class="kpi">${regCorta(r)}${acum ? "" : ""}</span>
+      ${top3 ? `<ol>${top3}</ol>` : `<span class="ldn">${vacio}</span>`}<span class="ver">Ver ranking completo →</span></button>`;
+  }).join("");
+  $("#leaders").innerHTML = ld ? `<div class="kpi" style="margin-bottom:8px">${regional ? "Top 3 por regional" : "Va punteando por regional"} · ${vista}${regional ? "" : " (el ganador es 1 a nivel país)"}</div><div class="ldg${regional ? " ldg3" : ""}">${ld}</div>` : "";
+  $("#podium").style.display = regional ? "none" : "";
+  const resto = acum ? [] : g.filter(x => !rk.pos.has(x.id) && x.m[selMes]);
+  const helpers = PEOPLE.filter(x => x.c === selCargo && !x.compite && (c.alcance === "pais" || x.r === selReg) && (acum || x.m[selMes]));
+  const rows = rk.orden.concat(resto).map(x => {
+    const pa = rk.pos.get(x.id);
+    let estado = "";
+    if (pa == null) {
+      const excl = !acum && x.m[selMes] && (MESES_EXCLUIDOS[x.r] || []).includes(selMes);
+      estado = excl ? '<span class="nc-tag">Mes no cuenta</span>' : acum ? "Sin meses válidos" : "Sin registro";
+    }
+    const win = acum && pa === 1;
+    const dz = tbTag(rk, x, acum ? volAcum(x, last) : volMes(x, selMes));
+    const fz = (acum || selMes === MESES[last]) && pa != null ? fire(x) : "";
+    return `<div class="lrow${pa === 1 ? " me" : ""}"><span class="n d">${pa ?? "—"}</span><span class="nm">${nom(x)}${fz}${win ? '<span class="badge w">Ganador</span>' : ""}${dz}${c.alcance === "pais" ? ` <span style="color:var(--mut);font-size:12px">· ${esc(regCorta(x.r))}</span>` : ""}</span><span class="mo">${estado}</span></div>`;
+  }).join("") + helpers.map(x => `<div class="lrow hrow"><span class="n d">—</span><span class="nm">${nom(x)}</span><span class="mo">Cubriendo sector</span></div>`).join("");
+  $("#rkList").innerHTML = `<div class="lhead"><span>#</span><span>${acum ? "Acumulado " + MESES_CORTOS[MESES[0]] + "–" + MESES_CORTOS[MESES[last]] : "Puesto de " + selMes}${c.alcance === "regional" ? " · " + regCorta(selReg) : ""}</span><span></span></div>` + (rows || `<div class="empty">Sin participantes.</div>`);
+  const hasExcl = g.some(x => MESES_EXCLUIDOS[x.r]);
+  // leyenda: solo lo que aplica en la vista actual
+  const vistos = rk.orden.concat(resto);
+  const hayRacha = (acum || selMes === MESES[last]) && vistos.some(x => racha(x).r > 0);
+  const items = [
+    ["🏆", "Ganador", acum ? "Sale de este acumulado." : "Sale del acumulado, no de un mes."],
+    hayRacha && ["🔥", "Racha", "Meses seguidos subiendo de puesto o sosteniendo el 1.º."],
+    rk.des.size && ["⚖️", "Desempate", "Empató en puntos; el % de volumen define el puesto."],
+    helpers.length && ['<span class="hp">*</span>', "Helper", "Está cubriendo el sector; no entra al premio."],
+    hasExcl && ["📍", "Regional Sur", "Agosto no cuenta por la contingencia del país."]
+  ].filter(Boolean);
+  $("#rkNote").innerHTML = `<div class="ctx">${acum ? "Viendo el <b>acumulado " + MESES_CORTOS[MESES[0]] + "–" + MESES_CORTOS[MESES[last]] + "</b>" : "Viendo solo <b>" + selMes.toLowerCase() + "</b>"}${c.alcance === "regional" ? " · " + regCorta(selReg) : " · todo el país"}</div>
+    <div class="legend">${items.map(([i, ti, tx]) => `<div class="lg"><span class="lgi">${i}</span><div><b>${ti}</b><span>${tx}</span></div></div>`).join("")}</div>`;
+  $("#prizeCard").innerHTML = `<div class="kpi">Premio ${c.alcance === "pais" ? "nacional" : "regional"}</div><h4 class="d">${esc(c.nombre)}</h4>
+    <div class="amt d">${c.monto} <small>mio COP</small></div><p>+ <b>${esc(c.premio)}</b></p><div class="sc">${esc(c.ganadores)}</div>`;
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-c],[data-r],[data-m]"); if (!b) return;
+  if (b.dataset.c) { selCargo = b.dataset.c; selReg = REGIONALES[0]; }  // conserva la pestaña de mes elegida
+  if (b.dataset.r) selReg = b.dataset.r;
+  if (b.dataset.m) selMes = b.dataset.m;
+  renderRanking();
+});
+
+/* ---------- Premios ---------- */
+$("#prizeGrid").innerHTML = CARGOS.map(c => `<div class="pc" data-go="${c.id}"><div class="kpi">${c.alcance === "pais" ? "Nacional" : "Regional"}</div><h4 class="d">${esc(c.nombre)}</h4>
+  <div class="amt d">${c.monto} mio COP</div><div>+ ${esc(c.premio)}</div><div class="sc">${esc(c.ganadores)}</div><div class="go">Ver ranking →</div></div>`).join("");
+$("#prizeGrid").addEventListener("click", e => {
+  const pc = e.target.closest("[data-go]"); if (!pc) return;
+  selCargo = pc.dataset.go; selReg = REGIONALES[0]; renderRanking();
+  document.getElementById("rankings").scrollIntoView({ behavior: "smooth" });
+});
+
+const regExcl = Object.keys(MESES_EXCLUIDOS);
+$("#dispTable").innerHTML = `<table class="mt"><thead><tr><th>Cargo</th>${MESES.map(m => `<th>${MESES_CORTOS[m]}</th>`).join("")}<th>Total<br>${REGIONALES.filter(r => !regExcl.includes(r)).map(regCorta).join(", ")}</th>${regExcl.map(r => `<th class="hs">Total<br>${regCorta(r)}</th>`).join("")}</tr></thead><tbody>` +
+  CARGOS.map(c => {
+    const v = MESES.map(m => sum(DISPONIBLES[c.id][m]));
+    const tot = v.reduce((a, b) => a + b, 0);
+    const exc = regExcl.map(r => MESES.reduce((a, m, i) => a + (MESES_EXCLUIDOS[r].includes(m) ? 0 : v[i]), 0));
+    return `<tr><td>${esc(c.nombre)}</td>${v.map(x => `<td>${fmt(x)}</td>`).join("")}<td><b>${fmt(tot)}</b></td>${exc.map((x, k) => `<td class="hs"><b>${DATA.some(d => d.c === c.id && d.r === regExcl[k]) ? fmt(x) : "—"}</b></td>`).join("")}</tr>`;
+  }).join("") + `</tbody></table>`;
+$("#dispNote").textContent = regExcl.map(r => `Regional ${regCorta(r)}: ${MESES_EXCLUIDOS[r].join(", ").toLowerCase()} no cuenta por la contingencia presentada en el país en el mes de agosto, así que su total de puntos disponibles es menor (suma solo ${MESES.filter(m => !MESES_EXCLUIDOS[r].includes(m)).map(m => MESES_CORTOS[m]).join(" + ")}). Su % se calcula sobre ese total.`).join(" ") + " En julio no hubo metas en los KPIs de trade, por eso julio tiene menos puntos disponibles.";
+// línea de tiempo tipo torneo: avanza con los cierres, no con el calendario
+(() => {
+  const n = MESES.length, tot = MESES_RANKING.length, faltan = tot - n;
+  const nodos = MESES_RANKING.map((m, i) => {
+    const cls = i < n ? "ok" : i === n ? "next" : "";
+    const final = i === tot - 1;
+    return `<div class="fx ${cls}${final ? " fin" : ""}"><span class="fxd">${i < n ? "✓" : final ? "🏆" : i + 1}</span><span class="fxm">${MESES_CORTOS[m]}</span>${i === n ? '<span class="fxt">Próximo cierre</span>' : final && i !== n ? '<span class="fxt">Final</span>' : ""}</div>`;
+  }).join('<span class="fxl"></span>');
+  $("#fixture").innerHTML = `<div class="fxh"><b class="d">Fecha ${n} de ${tot}</b><span>${faltan ? `Faltan ${faltan} cierre${faltan > 1 ? "s" : ""} para la final` : "¡Ranking cerrado!"}</span></div><div class="fxr">${nodos}</div>`;
+})();
+$("#updDate").textContent = ULTIMA_ACTUALIZACION;
+$("#ver").textContent = VERSION;
+renderRanking();
+</script>
+</body>
+</html>
